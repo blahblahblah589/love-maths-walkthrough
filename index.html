@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1 class="'heading">
+    <h1 class="heading">
         <img class="logo" src="assets/images/logo.png"> Love Maths
     </h1>
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="btn btn--big btn--green">
+            <button data-type="addition" class="btn btn--big btn--green">
                 <i class="fa-solid fa-plus"></i>
             </button>
-            <button class="btn btn--big btn--blue">
+            <button data-type="subtract" class="btn btn--big btn--blue">
                 <i class="fa-solid fa-minus"></i>
             </button>
-            <button class="btn btn--big btn--orange">
+            <button data-type="multiply" class="btn btn--big btn--orange">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <button class="btn btn--big btn--red">
+            <button data-type="division" class="btn btn--big btn--red">
                 <i class="fa-solid fa-divide"></i>
             </button>
         </div>
@@ -38,7 +40,7 @@
             <p class="answer-message">Enter Answer:</p>
             <input id="answer-box" type="number">
         </div>
-        <button class="btn btn--grey">Submit Answer:</button>
+        <button data-type="submit" class="btn btn--grey">Submit Answer:</button>
     </div>
 
     <div class="score-area">
